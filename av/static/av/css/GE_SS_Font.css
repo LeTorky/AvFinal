@@ -1,0 +1,7 @@
+/* fallback */
+@font-face {
+  font-family: 'GE_SS_Two_Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/GE_SS_Two_Medium.otf') format('opentype');
+}

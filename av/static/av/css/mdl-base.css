@@ -1,0 +1,122 @@
+/*
+*{
+    transition: all .4s ease-in-out;
+}
+*/
+
+.ge-ss-font {
+    font-family: 'GE_SS_Two_Medium', serif !important
+}
+
+.nnar-font {
+    font-family: 'Noto Naskh Arabic Regular', serif !important;
+}
+
+.nnab-font {
+    font-family: 'Noto Naskh Arabic Bold', serif !important;
+}
+
+button a {
+    color: unset;
+}
+
+/* Overriding MDL */
+.mdl-layout__tab {
+    color: rgb(200, 200, 200)
+}
+
+.mdl-layout.is-upgraded .mdl-layout__tab.is-active::after {
+    height: 2.5px;
+    background: #ffffff;
+}
+
+.material-icons {
+    font-size: 25px;
+}
+
+.mdl-button .mdl-badge[data-badge]:after {
+    top: -9px;
+    left: -15px;
+}
+
+.mdl-layout__tab-bar {
+    background-color: transparent
+}
+
+.mdl-tooltip {
+    font-size: 16px
+}
+
+.mdl-menu__container {
+    left: 40px !important;
+    right: auto !important;
+}
+
+.mdl-menu__item {
+    font-size: 16px
+}
+
+.demo-layout-waterfall .mdl-layout__header-row
+.mdl-navigation__link:last-of-type {
+    padding-right: 0;
+}
+
+.demo-card-wide.mdl-card {
+    width: 100%;
+}
+
+.demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background-color: #3f51b5;
+}
+
+.demo-card-wide > .mdl-card__menu {
+    color: #fff;
+}
+
+.mdl-card__supporting-text {
+    font-size: 1.2rem;
+    font-family: Noto Naskh Arabic Regular;
+}
+
+/* List card */
+.mdl-card {
+    width: 100%;
+    transition: all .4s ease-in-out;
+}
+
+.desc-mi {
+    font-size: 75px;
+    margin: auto;
+    color: #FFF;
+}
+
+.mdl-cell_animate {
+    position: relative;
+    animation: doAnimations 0.4s;
+}
+
+@keyframes doAnimations {
+    from {
+        top: -1000px
+    }
+    to {
+        top: 0
+    }
+}
+
+.mdl-textfield__input {
+    font-weight: bold;
+}
+
+/* Buttons */
+.form-button {
+    width: 80%;
+    height: 120%;
+    margin: auto;
+}
+
+.mdl-badge[data-badge]:after {
+    font-family: 'GE_SS_Two_Medium', serif
+}

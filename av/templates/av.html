@@ -1,0 +1,37 @@
+{% load static %}
+
+{% if av1 %}
+     <div style="text-align: center ">
+        <h2>Happy Tuftuf Turks {{date.num}}th Anniversary!</h2>
+  </div>
+    <div style="text-align: center">
+    <img src="{% static 'av/images/avheart.gif' %}">
+    </div>
+    <div style="text-align: center ">
+    <img src="{% static 'av/images/av.gif' %}">
+    </div>
+{% else %}
+    <div>
+        <h2><br><br><br><br><br><br><br></h2>
+    </div>
+    <div style="text-align: center">
+    <img src="{% static 'av/images/f1.png' %}">
+    </div>
+{% endif %}
+{% if av1 != 1 %}
+<form method="POST" action="{% url 'av:av' %}" class="row my-3" style="text-align: center;">
+    {% csrf_token %}
+    <div class="text-center">
+        {{ form.name.label_tag }}
+    </div>
+
+    <div class="form-group" style="text-align: center;">
+
+        {{ form.name }}
+    </div>
+    <div>
+<input type="submit" class="btn btn-primary btn-block col-sm-3 container center_div " value="+1 up">
+    </div>
+
+</form>
+{% endif %}
